@@ -62,9 +62,9 @@ namespace Eigen {
 		static inline Vector3f Lerp(Vector3f From, Vector3f To, float t) {
 			return From * (1.0f - t) + To * t;
 		}
-		static inline Vector3f Slerp(Vector3f a, Vector3f b, float t) {
-			float angle = Angle(a, b);
-			return a * (sin((1.0f - t) * angle) / sin(angle)) + b * (sin(t * angle) / sin(angle));
+		static inline Vector3f Slerp(Vector3f From, Vector3f To, float t) {
+			float angle = Angle(From, To);
+			return From * (sin((1.0f - t) * angle) / sin(angle)) + To * (sin(t * angle) / sin(angle));
 		}
 
 		static inline Vector3f Point(Vector3f From, Vector3f To) {
