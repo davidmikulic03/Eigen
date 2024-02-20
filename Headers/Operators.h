@@ -1,5 +1,5 @@
 #pragma once
-#include "float3.hpp"
+#include "Eigen.h"
 
 namespace Eigen {
 

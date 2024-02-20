@@ -20,16 +20,22 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Headers\Vector3f.hpp">
+    <ClInclude Include="Headers\Vector3.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Headers\Operators.hpp">
+    <ClInclude Include="Headers\Operators.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Headers\Quaternionf.hpp">
+    <ClInclude Include="Headers\Quaternion.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Headers\Eigen.hpp">
+    <ClInclude Include="Headers\Eigen.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Orbit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Headers\Constants.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
