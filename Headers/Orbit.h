@@ -58,6 +58,16 @@ namespace Eigen {
 				trueAnomaly -= floor(trueAnomaly / (2 * PI)) * 2 * PI;
 			}
 
+			inline double Apoapsis() {
+				if (eccentricity >= 1)
+					return std::numeric_limits<double>::infinity();
+				else
+					return semiMajorAxis * (1 + eccentricity);
+			}
+			inline double Periapsis() {
+				return semiMajorAxis * (1 - eccentricity);
+			}
+
 		public:
 			inline void Setparent(Orbit& orbit) { m_Parent = &orbit; }
 			Orbit* GetParent() { return m_Parent; }
