@@ -134,14 +134,6 @@
   <ItemGroup>
     <ClCompile Include="Source\Source.cpp" />
   </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Headers\Constants.h" />
-    <ClInclude Include="Headers\Eigen.h" />
-    <ClInclude Include="Headers\Orbit.h" />
-    <ClInclude Include="Headers\Quaternion.h" />
-    <ClInclude Include="Headers\Vector3.h" />
-    <ClInclude Include="Headers\Operators.h" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
